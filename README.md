@@ -1,5 +1,6 @@
 # run_the_app
-
+Used chatgpt to generate some parts of the code
+used images from "https://www.pexels.com/search/painting/"
 A web application starter template, created in Python with the Flask framework. Allows users to login with their Google accounts (via OAuth). Interfaces with a Google Sheets database.
 
 
@@ -17,7 +18,7 @@ Beginners can consult the prof's [Python Development Environment Setup Guide](ht
 
 ### Repo Setup
 
-From the prof's web application template repository on GitHub, click "Use this template" to create a new copy of this repository under your own control (first time only).
+From the  web application template repository on GitHub, click "Use this template" to create a new copy of this repository under your own control (first time only).
 
 Using GitHub Desktop or the command line, clone your copy of the repo to download it onto your local machine. Observe the location where you downloaded it (for example the Desktop).
 
