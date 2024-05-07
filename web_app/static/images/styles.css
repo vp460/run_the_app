@@ -1,0 +1,202 @@
+/* Additional Styles for Overall Page Elegance and Text Spacing */
+.hero-section {
+    background: url('/static/image2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background covers the entire area */
+    height: 35vh; /* Adjust height to ensure it's appropriate for your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(216, 44, 44);
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow from the background */
+}
+
+.display-4 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Enhances readability against the background */
+}
+
+.hero-section .lead {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+/* Style adjustments for the container and paragraphs */
+.container {
+    padding: 50px 15px 20px; /* Adds padding above and below the container's content */
+    text-align: center; /* Centers the text within the container */
+}
+
+.container h2 {
+    margin-top: 20px; /* Adds space above the header */
+    margin-bottom: 20px; /* Adds space below the header */
+    font-weight: bold;
+    color: #555;
+    font-size: 2.5rem; /* Increases the font size */
+}
+
+.container p {
+    font-size: 1em;
+    color: #444; /* Regular text color */
+    line-height: 1.6; /* Increases line height for better readability */
+    margin-bottom: 20px; /* Adds space after each paragraph */
+}
+.carousel-item img {
+    height: 300px; /* Reduced height from 500px to 400px */
+    width: auto; /* Maintain the aspect ratio of the images */
+    object-fit: cover; /* Ensures images cover the area well without stretching */
+}
+
+#artworkCarousel {
+    max-width: 60%; /* Reduce the maximum width of the carousel container */
+    margin: 0 auto; /* Centers the carousel if it's not already centered */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.2); /* More transparent black background */
+    padding: 0.2rem 0.35em; /* Reduce padding to decrease background size */
+    font-size: 1.1rem; /* Adjust font size to fit the carousel */
+    color: white; /* Set the text color to white */
+    border-radius: 5px; /* Rounded corners for aesthetic appearance */
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    bottom: 5%; /* Moves the caption further down from the bottom of the carousel item */
+    left: 15%; /* Sets caption alignment to the left */
+    transform: translateX(0%); /* Adjusts horizontal translation to match left alignment */
+    max-width: 70%; /* Limits the maximum width to maintain padding around the text */
+    text-align: left; /* Aligns the text to the left within the caption */
+}
+
+.carousel-item h5 {
+    margin-bottom: 5px; /* Adds a small margin below the title for spacing */
+}
+
+.carousel-item p {
+    font-size: 0.9rem; /* Reduced font size for the description */
+    margin-bottom: 0; /* Removes any bottom margin from the description */
+    color: white; /* Ensures the description text is white */
+}
+/* Increase size and visibility of carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M4.5 0L3 1.5 5.5 4 3 6.5 4.5 8 8 4.5 4.5 0z"/></svg>'); /* Custom arrow SVG with increased size and white color (#fff can be changed as needed) */
+    width: 50px; /* Set a specific width for the arrows */
+    height: 50px; /* Set a specific height for the arrows */
+    background-size: contain; /* Ensure the SVG scales correctly within the new dimensions */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.6)); /* Optional: Adds shadow for better visibility */
+}
+
+/* Ensure the carousel controls are large enough to accommodate the new icon size */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Increase hit area size for easier interaction */
+}
+
+/* Optional: Add a background color to the carousel controls for higher contrast */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%; /* Circular background */
+}
+
+.carousel-item {
+    transition: transform 2s ease; /* Adjusts the speed of the sliding effect */
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    position: relative; /* Added to maintain position context for absolute elements */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card-img-container:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 10px 20px; /* Adjust padding as necessary */
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 10px; /* Adjusted to align at the bottom within the card */
+    right: 10px; /* Adjusted to be consistent with right alignment */
+    padding: 10px;
+}
+
+.order-button {
+    background-color: white; /* White background */
+    color: #007bff; /* Blue text */
+    border: 2px solid #007bff; /* Blue border */
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; /* Makes it clear that the button is clickable */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.order-button:hover {
+    background-color: #007bff; /* Background turns blue */
+    color: white; /* Text turns white */
+}
+
+.price-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}

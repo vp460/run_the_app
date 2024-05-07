@@ -1,0 +1,295 @@
+/* Additional Styles for Overall Page Elegance and Text Spacing */
+.hero-section {
+    background: url('/static/images/image2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background covers the entire area */
+    height: 35vh; /* Adjust height to ensure it's appropriate for your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(216, 44, 44);
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow from the background */
+}
+
+.display-4 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Enhances readability against the background */
+}
+
+.hero-section .lead {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+/* Style adjustments for the container and paragraphs */
+.container {
+    padding: 50px 15px 20px; /* Adds padding above and below the container's content */
+    text-align: center; /* Centers the text within the container */
+}
+
+.container h2 {
+    margin-top: 20px; /* Adds space above the header */
+    margin-bottom: 20px; /* Adds space below the header */
+    font-weight: bold;
+    color: #555;
+    font-size: 2.5rem; /* Increases the font size */
+}
+
+.container p {
+    font-size: 1em;
+    color: #444; /* Regular text color */
+    line-height: 1.6; /* Increases line height for better readability */
+    margin-bottom: 20px; /* Adds space after each paragraph */
+}
+.carousel-item img {
+    height: 300px; /* Reduced height from 500px to 400px */
+    width: auto; /* Maintain the aspect ratio of the images */
+    object-fit: cover; /* Ensures images cover the area well without stretching */
+}
+
+#artworkCarousel {
+    max-width: 60%; /* Reduce the maximum width of the carousel container */
+    margin: 0 auto; /* Centers the carousel if it's not already centered */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.2); /* More transparent black background */
+    padding: 0.2rem 0.35em; /* Reduce padding to decrease background size */
+    font-size: 1.1rem; /* Adjust font size to fit the carousel */
+    color: white; /* Set the text color to white */
+    border-radius: 5px; /* Rounded corners for aesthetic appearance */
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    bottom: 5%; /* Moves the caption further down from the bottom of the carousel item */
+    left: 15%; /* Sets caption alignment to the left */
+    transform: translateX(0%); /* Adjusts horizontal translation to match left alignment */
+    max-width: 70%; /* Limits the maximum width to maintain padding around the text */
+    text-align: left; /* Aligns the text to the left within the caption */
+}
+
+.carousel-item h5 {
+    margin-bottom: 5px; /* Adds a small margin below the title for spacing */
+}
+
+.carousel-item p {
+    font-size: 0.9rem; /* Reduced font size for the description */
+    margin-bottom: 0; /* Removes any bottom margin from the description */
+    color: white; /* Ensures the description text is white */
+}
+/* Increase size and visibility of carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M4.5 0L3 1.5 5.5 4 3 6.5 4.5 8 8 4.5 4.5 0z"/></svg>'); /* Custom arrow SVG with increased size and white color (#fff can be changed as needed) */
+    width: 50px; /* Set a specific width for the arrows */
+    height: 50px; /* Set a specific height for the arrows */
+    background-size: contain; /* Ensure the SVG scales correctly within the new dimensions */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.6)); /* Optional: Adds shadow for better visibility */
+}
+
+/* Ensure the carousel controls are large enough to accommodate the new icon size */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Increase hit area size for easier interaction */
+}
+
+/* Optional: Add a background color to the carousel controls for higher contrast */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%; /* Circular background */
+}
+
+.carousel-item {
+    transition: transform 2s ease; /* Adjusts the speed of the sliding effect */
+}
+
+.card {
+    width: 350px; /* Consistent size */
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.card-img-container {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Increased height for the image */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full container without distortion */
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* Light background for overlay */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.card-img-container:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.card-body {
+    padding: 2px 10px; /* Reduced padding to decrease whitespace */
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 0px; /* Reduced margin to decrease whitespace below the title */
+    line-height: 1.1; /* Reduce line height to decrease space */
+}
+
+.price-text {
+    font-weight: bold;
+    font-size: 14px;
+    display: block; /* Block display for proper alignment */
+    margin-top: 1px; /* Minimal space between title and price */
+    margin-bottom: 1px; /* Minimal space between price and order button */
+}
+
+.price-text .price-value {
+    font-style: italic; /* Italicized for only the price value */
+}
+
+.card-footer {
+    padding: 5px;
+    text-align: center;
+}
+
+.order-button {
+    width: auto;
+    border-radius: 20px;
+    padding: 4px 8px; /* Adjust padding as necessary */
+    background-color: #ff3300; /* Vibrant orange for visibility */
+    color: white; /* White text color */
+    font-size: 14px; /* Consistent font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    display: block; /* Ensure the button is treated as a block-level element for width calculations */
+    text-align: center; /* Center the text inside the button */
+    border: none; /* No border unless you want one */
+    cursor: pointer; /* Change cursor to pointer to indicate this is a clickable item */
+}
+
+.order-button:hover {
+    background-color: #f1e9e7; /* Light contrasting color for hover */
+    color: #ff3300; /* Change text color on hover to maintain contrast */
+}
+
+/* Increase font sizes in the about section */
+.about-section .text-muted {
+    font-size: 1.2rem; /* Default is usually 1rem depending on the site's base font size */
+}
+
+.about-section .lead {
+    font-size: 1.5rem; /* Increase the 'lead' paragraph size for more prominence */
+}
+
+.about-section .display-4 {
+    font-size: 3.5rem; /* Slightly larger heading */
+}
+/* Change the main title color to black */
+.about-section .display-4 {
+    color: #000; /* Black color */
+}
+
+
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 25vh; /* Smaller hero section for tablet */
+    }
+    
+    .display-4 {
+        font-size: 2.5rem; /* Smaller font size for headings */
+    }
+    
+    .about-section .lead {
+        font-size: 1.2rem; /* Smaller lead text */
+    }
+    
+    .container h2 {
+        font-size: 2rem; /* Smaller h2 font size */
+    }
+    
+    .card {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 15px; /* Increase margin for better separation */
+    }
+
+    .card-img-container {
+        height: 200px; /* Reduced image container height */
+    }
+
+    .order-button {
+        padding: 6px 12px; /* Adjust button padding */
+        font-size: 12px; /* Smaller font size for the button */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 20vh; /* Even smaller hero section for mobile */
+    }
+
+    .display-4 {
+        font-size: 2rem; /* Even smaller font size for mobile headings */
+    }
+
+    .about-section .lead {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+
+    .container p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    .carousel-item img {
+        height: 200px; /* Smaller carousel images */
+    }
+    
+    .carousel-caption {
+        font-size: 0.9rem; /* Smaller caption text */
+        padding: 0.1rem 0.25em; /* Smaller padding */
+    }
+}
+
+/* Ensure carousel controls fit smaller screens */
+@media (max-width: 480px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px; /* Smaller icons for smaller screens */
+        height: 30px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%; /* Slightly larger hit area on very small screens */
+    }
+}
