@@ -1,6 +1,8 @@
 # run_the_app
-Used chatgpt to generate some parts of the code
-used images from "https://www.pexels.com/search/painting/"
+-Used chatgpt to generate some parts of the code
+
+-Used images from "https://www.pexels.com/search/painting/"
+
 A web application starter template, created in Python with the Flask framework. Allows users to login with their Google accounts (via OAuth). Interfaces with a Google Sheets database.
 
 
