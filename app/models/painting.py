@@ -116,7 +116,7 @@ class Painting(BaseModel):
             "year": 2020, 
             "price":200,
             "description":"Modern Art",
-            "url":"static/images/image4.jpg"
+            "url":"static/images/image5.jpg"
             },
                     {
             "title": "Multi Colored Abstract ",
