@@ -29,13 +29,13 @@
 
 /* Style adjustments for the container and paragraphs */
 .container {
-    padding: 50px 15px 20px; /* Adds padding above and below the container's content */
+    padding: 5px 15px 5px; /* Adds padding above and below the container's content */
     text-align: center; /* Centers the text within the container */
 }
 
 .container h2 {
-    margin-top: 20px; /* Adds space above the header */
-    margin-bottom: 20px; /* Adds space below the header */
+    margin-top: 5px; /* Adds space above the header */
+    margin-bottom: 5px; /* Adds space below the header */
     font-weight: bold;
     color: #555;
     font-size: 2.5rem; /* Increases the font size */
@@ -45,7 +45,7 @@
     font-size: 1em;
     color: #444; /* Regular text color */
     line-height: 1.6; /* Increases line height for better readability */
-    margin-bottom: 20px; /* Adds space after each paragraph */
+    margin-bottom: 10px; /* Adds space after each paragraph */
 }
 
 /* Responsive adjustments for screens smaller than 768px */
@@ -127,7 +127,7 @@
     width: 5%; /* Increase hit area size for easier interaction */
 }
 
-/* Optional: Add a background color to the carousel controls for higher contrast */
+
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
@@ -138,7 +138,7 @@
     transition: transform 2s ease; /* Adjusts the speed of the sliding effect */
 }
 
-.card {
+card {
     width: 350px; /* Consistent size */
     height: 500px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -186,7 +186,7 @@
 }
 
 .card-body {
-    padding: 2px 10px; /* Reduced padding to decrease whitespace */
+    padding: 2px 10px !important; /* Reduced padding to decrease whitespace */
     text-align: center;
 }
 
