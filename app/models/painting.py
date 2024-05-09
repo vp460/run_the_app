@@ -25,7 +25,7 @@ class Painting(BaseModel):
             "url":"static/images/image18.jpg"
             },
         {
-            "title": "At the Moulin Rouge: Two Women Waltzing", 
+            "title": "Yellow Blue Mélange", 
             "artist": "Henri de Toulouse-Lautrec", 
             "year": 2022, 
             "price":10000,
@@ -108,7 +108,7 @@ class Painting(BaseModel):
             "year": 2014, 
             "price":200,
             "description":"Modern Art",
-            "url":"static/image3.jpg"
+            "url":"static/images/image3.jpg"
             },
         {
             "title": "Abstract Expressionism", 
